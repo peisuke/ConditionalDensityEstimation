@@ -1,3 +1,4 @@
+# https://github.com/freelunchtheorem/Conditional_Density_Estimation
 import numpy as np
 
 def norm_along_axis_1(A, B, squared=False, norm_dim=False):
