@@ -1,7 +1,7 @@
 import numpy as np
 from sklearn.datasets import make_moons
 import matplotlib.pyplot as plt
-from cde.density_estimator.KMN import KernelMixtureNetwork
+from cdest.density_estimator.KMN import KernelMixtureNetwork
 
 X, _ = make_moons(n_samples=3000, noise=.05)
 X, Y = X[:,0:1], X[:,1:2]

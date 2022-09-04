@@ -4,7 +4,7 @@ import torch.optim as optim
 import torch.nn as nn
 import torch.nn.functional as F
 from torch.distributions import Normal, OneHotCategorical
-from cde.density_estimator.BaseDensityEstimator import BaseDensityEstimator
+from cdest.density_estimator.BaseDensityEstimator import BaseDensityEstimator
 
 class BaseNetwork(nn.Module):
     def __init__(self, in_dim, out_dim, n_components, hidden_dim=None):

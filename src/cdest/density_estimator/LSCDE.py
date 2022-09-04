@@ -3,10 +3,10 @@ import numpy as np
 import scipy.stats as stats
 from scipy.special import logsumexp
 
-from cde.utils.center_point_select import sample_center_points
-from cde.utils.misc import norm_along_axis_1
-from cde.utils.executor import execute_batch_pdf
-from cde.density_estimator.BaseDensityEstimator import BaseDensityEstimator
+from cdest.utils.center_point_select import sample_center_points
+from cdest.utils.misc import norm_along_axis_1
+from cdest.utils.executor import execute_batch_pdf
+from cdest.density_estimator.BaseDensityEstimator import BaseDensityEstimator
 
 MULTIPROC_THRESHOLD = 10**4
 

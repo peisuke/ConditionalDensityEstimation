@@ -5,7 +5,7 @@ def install_requires(filename):
         requirements = f.read().splitlines()
     return requirements
 
-setup(name='cde',
+setup(name='cdest',
       version='0.0.1',
-      packages=find_packages(),
+      package_dir={'': 'src'},
       install_requires=install_requires("requirements.txt"))

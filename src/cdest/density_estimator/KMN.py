@@ -6,9 +6,8 @@ import torch.nn as nn
 import torch.nn.functional as F
 from torch.autograd import Variable
 from torch.distributions import Normal, OneHotCategorical
-from cde.density_estimator.BaseDensityEstimator import BaseDensityEstimator
-
-from cde.utils.center_point_select import sample_center_points
+from cdest.density_estimator.BaseDensityEstimator import BaseDensityEstimator
+from cdest.utils.center_point_select import sample_center_points
 
 class BaseNetwork(nn.Module):
     def __init__(self, in_dim, out_dim, n_centers, hidden_dim=None):
